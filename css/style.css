@@ -14,7 +14,6 @@
   src: url(../assets/reey/Reey-Regular.otf);
 }
 
-
 .reey {
   font-family: reey;
   font-weight: 400;
@@ -559,8 +558,6 @@ header .circle {
   flex-wrap: wrap;
   background-color: var(--main-color);
 }
-
-
 
 .filter-btn {
   border: none;
@@ -1404,6 +1401,27 @@ header .circle {
   animation: scale 1.2s ease-out infinite 1s;
 }
 
+.thanks .container {
+  background-color: rgba(255, 255, 255, 0.69);
+  border-radius: 20px;
+  padding: 5rem;
+  max-width: 40%;
+}
+
+.thanks h1 {
+  margin-bottom: 2rem;
+}
+
+.thanks p {
+  margin-bottom: 1rem;
+}
+
+.thanks a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 600;
+}
+
 @keyframes scale {
   0% {
     transform: translate(-50%, -50%) scale(1);
@@ -1421,6 +1439,11 @@ header .circle {
 /* Responsive */
 
 @media (max-width: 1280px) {
+  .thanks .container {
+    max-width: 50%;
+    padding: 4rem;
+  }
+
   .text {
     font-size: 1rem;
   }
@@ -1599,7 +1622,6 @@ header .circle {
     height: 250px;
     max-width: 325px;
   }
-
 
   .img-overlay h3 {
     font-size: 1.1rem;
@@ -1853,8 +1875,9 @@ header .circle {
 }
 
 @media (max-width: 850px) {
-
-
+  .thanks .container {
+    max-width: 80%;
+  }
 
   .grid-2 {
     grid-template-columns: 1fr !important;
@@ -1972,9 +1995,8 @@ header .circle {
     width: 50%;
   }
 
-
   .gallery-image {
-    height: 210px; 
+    height: 210px;
     max-width: 270px;
   }
 
@@ -2141,9 +2163,18 @@ header .circle {
   .grid-item {
     width: 100%;
   }
+
+  .thanks .container {
+    max-width: 90%;
+    padding: 3rem;
+  }
 }
 
 @media (max-width: 560px) {
+  .thanks .container {
+    max-width: 90%;
+    padding: 2rem;
+  }
   .container {
     padding: 0 2rem;
   }
